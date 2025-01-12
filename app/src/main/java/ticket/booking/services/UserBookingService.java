@@ -1,17 +1,11 @@
-package ticket.booking.service;
-
-import com.fasterxml.jackson.core.JsonParser;
+package ticket.booking.services;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import ticket.booking.entities.Ticket;
 import ticket.booking.entities.Train;
 import ticket.booking.entities.User;
-import ticket.booking.util.UserServiceUtil;
+import ticket.booking.utils.UserServiceUtil;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.*;
 
 public class UserBookingService{
@@ -68,7 +62,6 @@ public class UserBookingService{
         }
     }
 
-    // todo: Complete this function
     public Boolean cancelBooking(String ticketId){
 
         Scanner s = new Scanner(System.in);
